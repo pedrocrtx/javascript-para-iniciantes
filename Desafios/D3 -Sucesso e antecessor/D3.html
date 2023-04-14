@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sucessor e Antecessor</title>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <div id="id1">
+        Antes e Depois
+    </div>
+
+    <script>
+        var x = window.document.getElementById('id1')
+
+        x.addEventListener('click', clicar)
+
+        function clicar() {
+            var num = window.prompt('Digite um número inteiro qualquer')
+            var n1 = Number(num)
+            var ant = n1 - 1
+            var suc = n1 + 1
+            var res = window.alert(`Antes de ${num}, temos o número ${ant} e depois temos o número ${suc}`)
+        }
+    </script>
+    
+</body>
+</html>

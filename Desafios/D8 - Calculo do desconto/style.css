@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    margin: 15px 10px;
+}
+
+main{
+    margin: 10px;
+}
+
+div#b1:hover {
+    background-color: gray;
+}
+
+div#b1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: lightgrey;
+    border: 2px solid grey;
+    height: 60px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#b2{
+    margin-top: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}

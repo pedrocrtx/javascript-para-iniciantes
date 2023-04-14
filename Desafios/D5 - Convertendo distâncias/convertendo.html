@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertendo distâncias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversos de medidas</h1>
+    <div id="id1">
+        Converter
+    </div>
+
+    <script>
+        var i = document.getElementById('id1')
+
+        i.addEventListener('click', clicar)
+        i.addEventListener('mouseover', dentro)
+        i.addEventListener('mouseout', fora)
+
+        function dentro () {
+            i.style.background = 'gray'
+        }
+
+        function fora () {
+            i.style.background = 'lightgray'
+        }
+
+        function clicar () {
+            var m = window.prompt('Digite o valor em metros da distância a ser convertida')
+
+
+            var mt = Number(m)
+
+            var k = mt/1000
+            var h = mt/100
+            var dam = mt/10
+            var dm = mt/0.1
+            var cm = mt/0.01
+            var mm = mt/0.001
+
+
+            document.write(`A conversão do valor ${m} metros para km é de: ${k} km <br/>`)
+            document.write(`A conversão do valor ${m} metros para hm é de: ${h} hm <br/>`)
+            document.write(`A conversão do valor ${m} metros para dam é de: ${dam} dam <br/>`)
+            document.write(`A conversão do valor ${m} metros para dm é de: ${dm} dm <br/>`)
+            document.write(`A conversão do valor ${m} metros para cm é de: ${cm} cm <br/>`)
+            document.write(`A conversão do valor ${m} metros para mm é de: ${mm} mm <br/>`)
+        }
+    </script>
+
+    <p></p>
+</body>
+</html>

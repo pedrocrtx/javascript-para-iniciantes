@@ -1,0 +1,14 @@
+div#id1{
+    background-image: linear-gradient(to bottom, #E5E5E5,white);
+    height: 50px;
+    width: 125px;
+    border: gray;
+    border-width: 2px;
+    border-style: solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: center;
+    margin-top: 12.5px;
+}

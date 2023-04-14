@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor R$ ➔ US$</h1>
+
+    <button onclick='clicar()'>
+        Converter
+    </button>
+
+    <div id="res">
+        Clique no botão acima para iniciar.
+    </div>
+    
+    <script>
+        function clicar () {
+
+            let d = window.prompt('Antes de mais nada. Qual a cotação atual do dolar?')
+            let r = window.prompt('Quantos reais você gostaria de converter?')
+
+            let dolar = Number(d)
+            let real = Number(r)
+            let conv = (real/dolar).toFixed(2)
+
+
+            let res = document.getElementById('res')
+
+            res.innerHTML = (`O valor <strong>R$ ${real}</strong> convertido para a cotação atual do dolar é de: <strong>US$ ${conv}</strong>`)
+        }
+    </script>
+</body>
+</html>

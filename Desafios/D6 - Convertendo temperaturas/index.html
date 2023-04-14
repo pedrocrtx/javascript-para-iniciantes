@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertendo temperaturas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Convertendo temperaturas</h1>
+
+    <button onclick="clicar()">
+    Converter
+    </button>
+
+    
+    <div id="res">
+    <p>Clique no botão acima para começar.</p>
+    </div>
+
+    <script>
+
+        function clicar () {
+            var t = window.prompt('Qual a temperatura que deseja converter?')
+            var res = window.document.getElementById('res')
+
+            var t1 = Number(t)
+            var far = ((t1 * 9/5) + 32)
+            var kel = (t1 + 273.15)
+
+
+            res.innerHTML = (`<h2>A temperatura de <strong>${t1}º</strong> celcius corresponde a:</h2>
+            <br><strong>${far} ºF</strong> (Fahrenheit)<br>
+            <strong>${kel} K</strong> (Kelvin)`)
+        }
+    </script>
+</body>
+</html>

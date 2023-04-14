@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolvendo Bhaskara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Resolvendo Bhaskara</h1>
+    </header>
+    <main>
+        <div id="a1">
+            Calcular
+        </div>
+        <div id="a2">
+            Considerando uma equação no formato <strong>a</strong>x² +<strong>b</strong>x + <strong>c</strong> = 0, aperte o botão acima para calcular o valor de Δ (delta).
+        </div>
+    </main>
+
+    <script>
+        var cal = document.getElementById('a1')
+        var res = document.getElementById('a2')
+
+        cal.addEventListener('click', clicar)
+
+        function clicar() {
+            var a1 = window.prompt ('Qual o valor de a?')
+            var b1 = window.prompt ('Qual o valor de b?')
+            var c1 = window.prompt ('Qual o valor de c?')
+
+            var a = Number(a1)
+            var b = Number(b1)
+            var c = Number(c1)
+
+            var bhas = (b**2) - (4*a*c)
+
+            res.innerHTML = (`<h1>Resolvendo Bhaskara</h1>
+            <p>A equação atual é <strong>${a}x² + ${b}x + ${c} = 0</strong></p><p>O cálculo realizado será <strong>Δ = ${b}² - 4.${a}.${c}</strong></p><p>O valor calculado foi de <strong>Δ = ${bhas}</strong></p>`)
+        }
+    </script>
+    
+</body>
+</html>

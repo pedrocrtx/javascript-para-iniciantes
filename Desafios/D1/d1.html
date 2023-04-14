@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Desafio das mensagens</h1>
+
+    <div id="B1" class="cor">
+        <div class="centro">Botão 1</div>
+    </div>
+
+    <div id="B2" class="cor">
+        <div class="centro">Botão 2</div>
+    </div>
+
+    <div id="B3" class="cor">
+        <div class="centro">Botão 3</div>
+    </div>
+
+    <script>
+        var a = window.document.getElementById ('B1')
+
+        a.addEventListener('click', clicar)
+
+        function clicar() {
+            window.alert('Você clicou no 1º botão')
+        }
+
+        var b = window.document.getElementById ('B2')
+
+        b.addEventListener('click', clicar1)
+
+        function clicar1(){
+            window.alert('Você clicou no 2º botão')
+        }
+
+        var c = window.document.getElementById ('B3')
+
+        c.addEventListener('click', clicar2)
+
+        function clicar2(){
+            window.alert('Você clicou no 3º botão')
+        }
+
+    </script>
+</body>
+</html>

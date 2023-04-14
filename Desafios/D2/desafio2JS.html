@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAFIO 2 - JS</title>
+    <link rel="shortcut icon" href="estudos_icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BOAS-VINDAS</h1>
+    <div id="id1">
+        <p>Inicie o desafio</p> 
+    </div>
+    
+    <script>
+        var a = window.document.getElementById('id1')
+
+        a.addEventListener('click', clicar)
+
+        function clicar () {
+           var nome = window.prompt ('Qual é o seu nome?')
+           var idade = window.prompt (`Olá, ${nome}! Qual é a sua idade?`)
+           var res = window.alert(`Acabei de conhecer o ${nome}, que tem ${idade} anos`)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    padding: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.297);
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,lightgray );
+}
+
+input[type='button']:hover {
+    background-image: linear-gradient(to bottom, white, lightblue);
+    color: blueviolet;
+}
+
+
+
+span#aprovado {
+    background-color: rgba(15, 200, 15, 0.689);
+    padding: 5px;
+    border-radius: 3px;
+    color: rgb(8, 97, 8);
+}
+
+span#recuperacao {
+    background-color: rgba(255, 255, 114, 0.544);
+    padding: 5px;
+    border-radius: 3px;
+    color:  rgb(93, 93, 43);
+}
+
+span#reprovado {
+    background-color: rgba(236, 79, 79, 0.578);
+    padding: 5px;
+    border-radius: 3px;
+    color: rgb(192, 65, 65);
+}
+
+

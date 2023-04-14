@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando troco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculando o troco</h1>
+    <div id="id1">
+        Comprar produto
+    </div>
+    
+<script>
+    var a = document.getElementById('id1')
+        
+    a.addEventListener('click', clicar)
+
+    function clicar (){
+        var nome = window.prompt('Qual o produto que você está comprando?')
+        var preco = window.prompt(`Qual o preço do ${nome}`)
+        var valor = window.prompt(`Qual o valor você deu para pagar o produto?`)
+
+        var p = Number(preco)
+        var v = Number(valor)
+        var r = v - p
+
+        window.alert (`Você comprou ${nome} que custou R$ ${preco}. Deu R$ ${valor} em dinheiro e vai receber $R ${r} de troco.`)
+
+    }
+
+
+
+
+</script>
+</body>
+</html>
